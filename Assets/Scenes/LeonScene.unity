@@ -643,7 +643,7 @@ MonoBehaviour:
   moveSpeed: 5
   activeMoveSpeed: 0
   dashSpeed: 10
-  dashlenght: 0.5
+  dashlenght: 0.3
   dashcooldown: 1
   dashCounter: 0
   dashcoolCounter: 0

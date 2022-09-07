@@ -18,25 +18,14 @@ public class playerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Camera cam;
 
-
-    void Start()
+    void dash ()
     {
-        activeMoveSpeed = moveSpeed;
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-       if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && dashcoolCounter <= 0 && dashCounter <= 0)
         {
-            if (dashcoolCounter <=0 && dashCounter <= 0)
-            {
-                activeMoveSpeed = dashSpeed;
-                dashCounter = dashlenght;
-            }
+            activeMoveSpeed = dashSpeed;
+            dashCounter = dashlenght;
         }
-
-       if (dashCounter > 0)
+        if (dashCounter > 0)
         {
             dashCounter -= Time.deltaTime;
 
@@ -46,19 +35,29 @@ public class playerMovement : MonoBehaviour
                 dashcoolCounter = dashcooldown;
             }
 
-            if (dashcoolCounter > 0)
+            if (dashcoolCounter >= 0)
             {
                 dashcoolCounter -= Time.deltaTime;
             }
         }
-       
+
+    }
+    
+    void Start()
+    {
+        activeMoveSpeed = moveSpeed;
+    }
+    
+    // Update is called once per frame
+    void Update()
+    {
+        dash();
+
        movement.x = Input.GetAxisRaw("Horizontal");
        movement.y = Input.GetAxisRaw("Vertical");
 
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+       mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
        
-
-     
     }
 
     void FixedUpdate()
