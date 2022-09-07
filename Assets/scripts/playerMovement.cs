@@ -35,7 +35,7 @@ public class playerMovement : MonoBehaviour
                 dashcoolCounter = dashcooldown;
             }
 
-            if (dashcoolCounter >= 0)
+            if (dashcoolCounter > 0)
             {
                 dashcoolCounter -= Time.deltaTime;
             }
@@ -51,7 +51,7 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // dash();
+         // dash();
 
        movement.x = Input.GetAxisRaw("Horizontal");
        movement.y = Input.GetAxisRaw("Vertical");
