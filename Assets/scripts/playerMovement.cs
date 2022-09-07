@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float activeMoveSpeed;
     public float dashSpeed;
-    public float dashlenght = 0.5f, dashcooldown = 1f;
+    public float dashlenght = 0.3f, dashcooldown = 1f;
 
     public float dashCounter;
     public float dashcoolCounter;
