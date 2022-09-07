@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 3f;
     public float activeMoveSpeed;
     public float dashSpeed;
     public float dashlenght = 0.3f, dashcooldown = 1f;
