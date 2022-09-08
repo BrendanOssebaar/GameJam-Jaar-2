@@ -672,10 +672,8 @@ MonoBehaviour:
   moveSpeed: 5
   activeMoveSpeed: 0
   dashSpeed: 10
-  dashlenght: 0.3
-  dashcooldown: 1
-  dashCounter: 0
-  dashcoolCounter: 0
+  dashCooldown: 1
+  dashLenght: 0.3
   rb: {fileID: 1700351133}
   cam: {fileID: 1510486591}
 --- !u!50 &1700351133
