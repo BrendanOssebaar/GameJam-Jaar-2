@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
 public class playerMovement : MonoBehaviour
 {
@@ -9,8 +10,8 @@ public class playerMovement : MonoBehaviour
     public float dashSpeed;
     public float dashlenght = 0.3f, dashcooldown = 1f;
 
-    public float dashCounter;
-    public float dashcoolCounter;
+    public bool canDash;
+
 
     Vector2 movement;
     Vector2 mousePos;
@@ -19,39 +20,29 @@ public class playerMovement : MonoBehaviour
     public Camera cam;
 
     void dash ()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && dashcoolCounter <= 0 && dashCounter <= 0)
+    { 
+
+        if (Input.GetKeyDown(KeyCode.Space) && canDash)
         {
             activeMoveSpeed = dashSpeed;
-            dashCounter = dashlenght;
         }
-        if (dashCounter > 0)
-        {
-            dashCounter -= Time.deltaTime;
-
-            if (dashCounter <= 0)
-            {
-                activeMoveSpeed = moveSpeed;
-                dashcoolCounter = dashcooldown;
-            }
-
-            if (dashcoolCounter > 0)
-            {
-                dashcoolCounter -= Time.deltaTime;
-            }
-        }
-
+        canDash = false;
+        activeMoveSpeed = moveSpeed;
+        Thread.Sleep(1000);
+        canDash = true;
+        
     }
     
-    void Start()
+    void Awake()
     {
+        canDash = true;
         activeMoveSpeed = moveSpeed;
     }
     
     // Update is called once per frame
     void Update()
     {
-         // dash();
+       dash();
 
        movement.x = Input.GetAxisRaw("Horizontal");
        movement.y = Input.GetAxisRaw("Vertical");
