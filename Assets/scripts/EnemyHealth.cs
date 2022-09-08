@@ -17,7 +17,7 @@ public class EnemyHealth : MonoBehaviour
 	public void TakeDamage(int damage)
 	{
 		health -= damage;
-		healthBar.SetHealth(health);
+
 		if (health <= 0)
 		{
 			Die();
