@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 1108409809}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,11 +268,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  activeMoveSpeed: 0
-  dashSpeed: 10
-  dashlenght: 0.3
-  dashcooldown: 1
-  canDash: 0
   rb: {fileID: 1108409806}
   cam: {fileID: 1565684036}
 --- !u!50 &1108409806
@@ -611,6 +606,7 @@ GameObject:
   - component: {fileID: 1565684037}
   - component: {fileID: 1565684036}
   - component: {fileID: 1565684035}
+  - component: {fileID: 1565684038}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -649,8 +645,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0
+  far clip plane: 100
   field of view: 60
   orthographic: 1
   orthographic size: 5
@@ -684,6 +680,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565684038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565684034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b257ab85ae3444cbdeefd1f34f4370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1821709092
 GameObject:
   m_ObjectHideFlags: 0

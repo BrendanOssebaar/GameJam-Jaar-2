@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        rb.velocity = transform.forward * speed;
+        rb.velocity = transform.up * speed;
     }
 
    
