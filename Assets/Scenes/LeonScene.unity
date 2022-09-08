@@ -670,12 +670,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  activeMoveSpeed: 0
-  dashSpeed: 10
-  dashCooldown: 1
-  dashLenght: 0.3
   rb: {fileID: 1700351133}
   cam: {fileID: 1510486591}
+  dashPower: 5
 --- !u!50 &1700351133
 Rigidbody2D:
   serializedVersion: 4
