@@ -6,10 +6,10 @@ using System.Threading;
 public class PlayerShooting : MonoBehaviour
 {
     public Transform firepoint;
-
+    public GameObject bulletPrefab;
     void Shoot()
     {
-        
+        Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
     }
     void Update()
     {
