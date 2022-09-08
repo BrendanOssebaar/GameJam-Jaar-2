@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
-    public int damage = 20;
+    public int damage;
     public Rigidbody2D rb;
 
     void Start()
@@ -14,18 +14,19 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, 1f);
     }
 
-    void OnTriggerEnter2D (Collider2D hitInfo)
+    /*void OnTriggerEnter2D (Collider2D hitInfo)
     {
         EnemyHealth enemy = hitInfo.GetComponent<EnemyHealth>();
         /*if (enemy != null)
         {
             enemy.TakeDamage(damage);
-        }*/
         Destroy(gameObject);
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
+        }
+
+    }*/
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collision.gameObject.tag != "Bullet")
+        if(collider.gameObject.tag == "Enemy")
             {
             Destroy(gameObject);
             }
