@@ -12,23 +12,14 @@ public class playerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
     public Camera cam;
-    public float dashPower = 500;
-
-
+    
     // Update is called once per frame
     void Update()
     {
-       
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.MovePosition(rb.position + movement * dashPower * Time.deltaTime);
-        }
-
        movement.x = Input.GetAxisRaw("Horizontal");
        movement.y = Input.GetAxisRaw("Vertical");
 
        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-       
     }
 
     void FixedUpdate()
