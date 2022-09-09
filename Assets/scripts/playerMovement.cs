@@ -9,18 +9,20 @@ public class playerMovement : MonoBehaviour
 
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 24f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 1f;
+
+    [SerializeField] private float dashingPower = 10f;
+    [SerializeField] private float dashingTime = 0.2f;
+    [SerializeField] private float dashingCooldown = 1f;
     
     Vector2 movement;
     Vector2 mousePos;
 
-    
-    public Rigidbody2D rb;
-    public Camera cam;
-    
-    
+
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Camera cam;
+    [SerializeField] private TrailRenderer tr;
+
+
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -56,8 +58,10 @@ public class playerMovement : MonoBehaviour
         canDash = false;
         isDashing = true;
         rb.velocity = movement * dashingPower;
+        tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         isDashing = false;
+        tr.emitting = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
 
