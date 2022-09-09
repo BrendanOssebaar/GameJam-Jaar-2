@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
     WeaponSwitch weaponSwitch;
+    
     public Transform firepoint;
     public Transform firepoint1;
     public Transform firepoint2;
@@ -15,24 +16,24 @@ public class PlayerShooting : MonoBehaviour
     public float nextFire1;
     public float nextFire2;
 
-    void Start ()
+    public void Awake ()
     {
-        weaponSwitch = GameObject.Find("Player").GetComponent<WeaponSwitch>();
+        weaponSwitch = GameObject.Find("WeaponHolder").GetComponent<WeaponSwitch>();
     }
 
-    void Shootpistol()
+    public void Shootpistol()
     {
         Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         nextFire1 = Time.time + fireRatePistol;
     }
-    void ShootShotgun()
+    public void ShootShotgun()
     {
         Instantiate(shotgunPrefab, firepoint.position, firepoint.rotation);
         Instantiate(shotgunPrefab, firepoint1.position, firepoint1.rotation);
         Instantiate(shotgunPrefab, firepoint2.position, firepoint2.rotation);
         nextFire2 = Time.time + fireRateShotgun;
     }
-    void Update()
+    public void Update()
     {
         if (Input.GetButton("Fire1") && Time.time > nextFire1 && selectedWeapon == 0)
         {
