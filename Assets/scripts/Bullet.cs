@@ -33,13 +33,6 @@ public class Bullet : MonoBehaviour
             }
         
     }
-    //void OnTriggerEnter2D(Collider2D collider)
-    //{
-    //    if(collider.gameObject.tag == "Enemy")
-    //        {
-    //        Destroy(gameObject);
-    //        }
-        
-    //}
+    
 
 }
