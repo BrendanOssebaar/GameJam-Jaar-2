@@ -10,6 +10,7 @@ TagManager:
   - heal
   - armour
   - Bullet
+  - HitAble
   layers:
   - Default
   - TransparentFX
