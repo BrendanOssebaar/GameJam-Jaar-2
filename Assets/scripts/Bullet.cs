@@ -23,16 +23,10 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(damage);
         Destroy(gameObject);
         }
-
-    }*/
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if(collider.gameObject.tag == "HitAble")
-            {
+        if (hitInfo.gameObject.tag == "HitAble")
+        {
             Destroy(gameObject);
-            }
-        
-    }
-    
+        }
 
+    }
 }
