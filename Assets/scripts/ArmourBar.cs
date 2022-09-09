@@ -17,7 +17,7 @@ public class ArmourBar : MonoBehaviour
         }
 
 
-        else (Armour = false);
+        if (Armour = false);
         {
             Image.SetActive(false);
         }
