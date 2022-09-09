@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class WeaponSwitch : MonoBehaviour
 {
-
-
     public int selectedWeapon = 0;
     // Start is called before the first frame update
     void Start()
@@ -51,9 +49,13 @@ public class WeaponSwitch : MonoBehaviour
         foreach (Transform weapon in transform)
         {
             if (i== selectedWeapon)
+            {
                 weapon.gameObject.SetActive(true);
+            }
             else
+            {
                 weapon.gameObject.SetActive(true);
+            }
             i++;
             
         }
