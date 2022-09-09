@@ -15,10 +15,10 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, 1f);
     }
 
-    /*void OnTriggerEnter2D (Collider2D hitInfo)
+    void OnTriggerEnter2D(Collider2D hitInfo)
     {
         EnemyHealth enemy = hitInfo.GetComponent<EnemyHealth>();
-        /*if (enemy != null)
+        if (enemy != null)
         {
             enemy.TakeDamage(damage);
         Destroy(gameObject);
@@ -33,5 +33,13 @@ public class Bullet : MonoBehaviour
             }
         
     }
+    //void OnTriggerEnter2D(Collider2D collider)
+    //{
+    //    if(collider.gameObject.tag == "Enemy")
+    //        {
+    //        Destroy(gameObject);
+    //        }
+        
+    //}
 
 }

@@ -6,7 +6,6 @@ TagManager:
   tags:
   - wall
   - Weapon
-  - Enemy
   - heal
   - armour
   - Bullet
