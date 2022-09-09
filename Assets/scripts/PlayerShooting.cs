@@ -39,7 +39,7 @@ public class PlayerShooting : MonoBehaviour
         {
             Shootpistol();
         }
-        if (Input.GetButton("Fire2") && Time.time > nextFire2 && weaponSwitch.selectedWeapon == 1)
+        if (Input.GetButton("Fire1") && Time.time > nextFire2 && weaponSwitch.selectedWeapon == 1)
         {
             ShootShotgun();
         }
