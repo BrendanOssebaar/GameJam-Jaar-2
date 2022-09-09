@@ -54,7 +54,7 @@ public class WeaponSwitch : MonoBehaviour
             }
             else
             {
-                weapon.gameObject.SetActive(true);
+                weapon.gameObject.SetActive(false);
             }
             i++;
             
