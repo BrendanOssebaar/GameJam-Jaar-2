@@ -665,7 +665,6 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 1400171279}
   cam: {fileID: 0}
-  dashPower: 500
 --- !u!50 &1400171279
 Rigidbody2D:
   serializedVersion: 4
@@ -814,10 +813,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 416589335a024b140a5762829bdabe3a, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
