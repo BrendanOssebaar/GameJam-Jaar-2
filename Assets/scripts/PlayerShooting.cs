@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Threading;
 
 public class PlayerShooting : MonoBehaviour
 {
+    WeaponSwitch weaponSwitch;
     public Transform firepoint;
     public Transform firepoint1;
     public Transform firepoint2;
@@ -14,6 +14,12 @@ public class PlayerShooting : MonoBehaviour
     public float fireRateShotgun;
     public float nextFire1;
     public float nextFire2;
+
+    void Start ()
+    {
+        weaponSwitch = GameObject.Find("Player").GetComponent<WeaponSwitch>();
+    }
+
     void Shootpistol()
     {
         Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
@@ -28,11 +34,11 @@ public class PlayerShooting : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire1 && selectedweapon == 0)
+        if (Input.GetButton("Fire1") && Time.time > nextFire1 && selectedWeapon == 0)
         {
             Shootpistol();
         }
-        if (Input.GetButton("Fire2") && Time.time > nextFire2 && selectedweapon != 0)
+        if (Input.GetButton("Fire2") && Time.time > nextFire2 && selectedWeapon != 0)
         {
             ShootShotgun();
         }
