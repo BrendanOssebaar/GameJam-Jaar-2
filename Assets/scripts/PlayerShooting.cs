@@ -28,11 +28,11 @@ public class PlayerShooting : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time > nextFire1 /*&& hasPistol == true*/)
+        if (Input.GetButton("Fire1") && Time.time > nextFire1 && selectedweapon == 0)
         {
             Shootpistol();
         }
-        if (Input.GetButton("Fire2") && Time.time > nextFire2 /* && hasShotgun == true*/)
+        if (Input.GetButton("Fire2") && Time.time > nextFire2 && selectedweapon != 0)
         {
             ShootShotgun();
         }
