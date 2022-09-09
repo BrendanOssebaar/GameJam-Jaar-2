@@ -7,6 +7,9 @@ TagManager:
   - wall
   - Weapon
   - Enemy
+  - heal
+  - armour
+  - Bullet
   layers:
   - Default
   - TransparentFX
