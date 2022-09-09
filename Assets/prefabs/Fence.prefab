@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2978570850638839969}
   - component: {fileID: 679570922992591948}
   - component: {fileID: 8211309462569387172}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fence
   m_TagString: HitAble
   m_Icon: {fileID: 0}

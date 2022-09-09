@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8674125699876495399}
   - component: {fileID: 3250598763695148389}
   - component: {fileID: -855918168743582488}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cart
   m_TagString: HitAble
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8952439474049610612}
   - component: {fileID: 3079295843512465881}
   - component: {fileID: 7710414257030529380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Box Wall 1
   m_TagString: HitAble
   m_Icon: {fileID: 0}

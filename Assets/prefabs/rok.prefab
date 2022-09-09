@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3289349408697058055}
   - component: {fileID: 3289349408697058052}
   - component: {fileID: 5482601403599181736}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: rok
   m_TagString: HitAble
   m_Icon: {fileID: 0}
