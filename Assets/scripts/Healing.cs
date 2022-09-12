@@ -22,6 +22,7 @@ public class Healing : MonoBehaviour
 		if (Player != null)
 		{
 			Player.Heal(amount);
+			Destroy(gameObject);
 		}
 
 		Instantiate(impactEffect, transform.position, transform.rotation);
