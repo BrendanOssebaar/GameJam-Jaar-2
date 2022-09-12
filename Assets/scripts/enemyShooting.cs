@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class enemyShooting : MonoBehaviour
 {
+    public float range = 5f;
+    private GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,7 @@ public class enemyShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
     }
 }
