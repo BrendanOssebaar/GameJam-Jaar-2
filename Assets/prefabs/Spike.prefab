@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7067154478318537015}
   - component: {fileID: 7067154478318537008}
-  - component: {fileID: 7067154478318537009}
   - component: {fileID: 7067154478318537010}
   - component: {fileID: 1894742125979735226}
+  - component: {fileID: -7939125460657089163}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -87,7 +87,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &7067154478318537009
+--- !u!114 &7067154478318537010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067154478318537011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2813a2785cb1641aaefa6e5d1032d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  damage: 20
+  rb: {fileID: -7939125460657089163}
+--- !u!70 &1894742125979735226
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067154478318537011}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.9099998, y: 5.3799996}
+  m_Direction: 0
+--- !u!50 &-7939125460657089163
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -108,34 +139,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7067154478318537010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7067154478318537011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e2813a2785cb1641aaefa6e5d1032d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  damage: 20
-  rb: {fileID: 7067154478318537009}
---- !u!70 &1894742125979735226
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7067154478318537011}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.9099998, y: 5.3799996}
-  m_Direction: 0
