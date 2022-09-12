@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 2771208913137013821}
   - component: {fileID: 2771208913137013762}
   - component: {fileID: 2771208913137013763}
+  - component: {fileID: 2110670342268771555}
   m_Layer: 3
   m_Name: enemy 1
   m_TagString: enemy
@@ -120,6 +121,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2771208912083179775}
+  - {fileID: 8391088114342332555}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -275,3 +277,51 @@ MonoBehaviour:
   damage2: 20
   rb: {fileID: 2771208913137013821}
   impactEffect: {fileID: 0}
+--- !u!114 &2110670342268771555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2771208913137013818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc46f673602bfa247aaa89f49391bbcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpikePrefab: {fileID: 7067154478318537011, guid: c1e42db16618eb14182255181390667f, type: 3}
+  Player: {fileID: 0}
+  firePoint: {fileID: 7162391374187669541}
+  fireRateSpike: 3
+  range: 15
+--- !u!1 &7162391374187669541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8391088114342332555}
+  m_Layer: 0
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8391088114342332555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162391374187669541}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 1.56, z: -0.013118949}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2771208913137013819}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
