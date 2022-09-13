@@ -13,12 +13,14 @@ public class PlayerHealth : MonoBehaviour
 	void Start()
 	{
 		healthBar.SetMaxHealth(health);
-		maxhealth = health;
+		
 	}
 
 	public void TakeDamage(int damage2)
 	{
 		health -= damage2;
+
+		healthBar.SetHealth(health);
 
 		if (health <= 0)
 		{
@@ -35,6 +37,7 @@ public class PlayerHealth : MonoBehaviour
 	public void Heal(int amount)
 	{
 		health += amount;
+		healthBar.SetHealth(health);
 
 		if (health >= maxhealth)
 		{

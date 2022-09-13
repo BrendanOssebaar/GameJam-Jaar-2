@@ -23,7 +23,7 @@ public class EnemyDamage : MonoBehaviour
 			Player.TakeDamage(damage2);
 		}
 
-		Instantiate(impactEffect, transform.position, transform.rotation);
+		//Instantiate(impactEffect, transform.position, transform.rotation);
 
 	}
 

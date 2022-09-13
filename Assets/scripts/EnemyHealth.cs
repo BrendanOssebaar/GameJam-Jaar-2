@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
 
 	void Start()
 	{
-		healthBar.SetMaxHealth(health);
+
 	}
 
 	public void TakeDamage(int damage)
