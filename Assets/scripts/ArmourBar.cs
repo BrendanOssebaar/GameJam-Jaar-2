@@ -15,17 +15,17 @@ public class ArmourBar : MonoBehaviour
 
 	}
 
-    public void SetMaxHealth(int health)
+	public void SetMaxArmour(int currarmour)
 	{
-		slider.maxValue = health;
-		slider.value = health;
+		slider.maxValue = currarmour;
+		slider.value = currarmour;
 
 		//fill.color = gradient.Evaluate(1f);
 	}
 
-	public void SetHealth(int health)
+	public void SetArmour(int currarmour)
 	{
-		slider.value = health;
+		slider.value = currarmour;
 
 		//fill.color = gradient.Evaluate(slider.normalizedValue);
 	}

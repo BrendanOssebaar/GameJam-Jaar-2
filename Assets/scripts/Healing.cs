@@ -5,7 +5,7 @@ using UnityEngine;
 public class Healing : MonoBehaviour
 {
 
-	public int amount = 20;
+	public int amount2 = 20;
 	public Rigidbody2D rb;
 	public GameObject impactEffect;
 
@@ -18,10 +18,10 @@ public class Healing : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D hitInfo)
 	{
-		PlayerHealth Player = hitInfo.GetComponent<PlayerHealth>();
-		if (Player != null)
+		PlayerArmour Player2 = hitInfo.GetComponent<PlayerArmour>();
+		if (Player2 != null)
 		{
-			Player.Heal(amount);
+			Player2.Heal(amount2);
 			Destroy(gameObject);
 		}
 

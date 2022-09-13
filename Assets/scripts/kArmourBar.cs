@@ -9,19 +9,19 @@ public class kArmourBar : MonoBehaviour
     private GameObject Image;
     private bool Armour;
 
-    public void SwitchArmourBar()
-    {
-        if (Armour = true)
-        {
-            Image.SetActive(true);
-        }
+//    public void SwitchArmourBar()
+//    {
+//        if (Armour = true)
+//        {
+//            Image.SetActive(true);
+//        }
 
 
-        if (Armour = false);
-        {
-            Image.SetActive(false);
-        }
-    }
+//        if (Armour = false);
+//        {
+//            Image.SetActive(false);
+//        }
+//    }
     
 
     

@@ -17,11 +17,17 @@ public class EnemyDamage : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D hitInfo)
 	{
-		PlayerHealth Player = hitInfo.GetComponent<PlayerHealth>();
-		if (Player != null)
+		//PlayerHealth Player = hitInfo.GetComponent<PlayerHealth>();
+		PlayerArmour Player2 = hitInfo.GetComponent<PlayerArmour>();
+		if (Player2 != null)
 		{
-			Player.TakeDamage(damage2);
+			Player2.TakeDamagesh(damage2);
 		}
+		//if (Player != null)
+		//{
+		//	Player.TakeDamage(damage2);
+		//}
+
 
 		//Instantiate(impactEffect, transform.position, transform.rotation);
 

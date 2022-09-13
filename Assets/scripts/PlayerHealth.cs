@@ -45,14 +45,14 @@ public class PlayerHealth : MonoBehaviour
 		}
 	}
 
-	public void armour(int amount)
-	{
-		health += amount;
+	//public void armour(int amount)
+	//{
+	//	health += amount;
 
-		if (health >= maxhealth)
-		{
-			health = maxhealth;
-		}
-	}
+	//	if (health >= maxhealth)
+	//	{
+	//		health = maxhealth;
+	//	}
+	//}
 
 }
