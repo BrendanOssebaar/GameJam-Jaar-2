@@ -167,7 +167,7 @@ MonoBehaviour:
   radius: 0.5
   height: 2
   canMove: 1
-  maxSpeed: 4.2
+  maxSpeed: 4.8
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
-  health: 100
+  health: 80
   deathEffect: {fileID: 1435318347861679035, guid: be2376235f4ebf44a8233c1c8575977b, type: 3}
 --- !u!50 &6084641257122513651
 Rigidbody2D:

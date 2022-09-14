@@ -22,6 +22,7 @@ public class EnemyDamage : MonoBehaviour
 		if (Player2 != null)
 		{
 			Player2.TakeDamagesh(damage2);
+
 		}
 		//if (Player != null)
 		//{
