@@ -225,7 +225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   health: 130
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 6958670004273359426, guid: f285d7c68925ee34996587c4d6b01cac, type: 3}
 --- !u!50 &2771208913137013821
 Rigidbody2D:
   serializedVersion: 4
