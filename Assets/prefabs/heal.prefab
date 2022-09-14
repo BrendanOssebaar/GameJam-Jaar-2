@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9255e90735ae77647b64f22bad8a863a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount2: 20
+  amount2: 50
   rb: {fileID: 1435318347861679028}
   impactEffect: {fileID: 0}
 --- !u!50 &1435318347861679028
