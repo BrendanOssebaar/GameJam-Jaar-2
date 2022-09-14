@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerArmour : MonoBehaviour
 {
+	public GameObject deathscreen;
+
 	public ArmourBar armourBar;
 	public int currarmour;
 	public int maxarmour = 100;
@@ -46,6 +48,7 @@ public class PlayerArmour : MonoBehaviour
 
 	void Die()
     {
+		deathscreen.SetActive(true);
 		Destroy(gameObject);
     }
 
