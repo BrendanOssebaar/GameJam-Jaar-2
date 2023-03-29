@@ -20,7 +20,7 @@ public class Armour : MonoBehaviour
 		PlayerHealth Player = hitInfo.GetComponent<PlayerHealth>();
 		if (Player != null)
 		{
-			Player.armour(amount);
+			//Player.armour(amount);
 		}
 
 		Instantiate(impactEffect, transform.position, transform.rotation);
