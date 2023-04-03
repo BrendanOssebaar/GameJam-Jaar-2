@@ -6,12 +6,13 @@ public class EnemyHealth : MonoBehaviour
 {
 	public HealthBar healthBar;
 	public int health = 100;
-
+	[SerializeField] private float dropChance = 0f;
+	private float m_dropChance = 1f;
 	public GameObject deathEffect;
 
 	void Start()
 	{
-
+		m_dropChance = 1f / dropChance; // Set Odds here - e.g. 1 in 10 chance
 	}
 
 	public void TakeDamage(int damage)
@@ -32,10 +33,10 @@ public class EnemyHealth : MonoBehaviour
 			Instantiate(deathEffect, transform.position, Quaternion.identity);
 		}
 
-
+		
 		Destroy(gameObject);
 	}
-
-	const float m_dropChance = 1f / 10f; // Set Odds here - e.g. 1 in 10 chance
+    
+	
 
 }

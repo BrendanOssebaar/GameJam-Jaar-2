@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 2771208913137013763}
   - component: {fileID: 2110670342268771555}
   m_Layer: 3
-  m_Name: enemy 1
+  m_Name: enemy 3
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,7 +226,7 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   health: 100
   dropChance: 5
-  deathEffect: {fileID: 6958670004273359426, guid: f285d7c68925ee34996587c4d6b01cac, type: 3}
+  deathEffect: {fileID: 1435318347861679035, guid: be2376235f4ebf44a8233c1c8575977b, type: 3}
 --- !u!50 &2771208913137013821
 Rigidbody2D:
   serializedVersion: 4
